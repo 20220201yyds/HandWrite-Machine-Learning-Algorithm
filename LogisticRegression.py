@@ -38,7 +38,7 @@ class LogisticRegression:
                 self.w-=self.alpha*d_w/self.batchsize
 
     def train2(self,data):
-        #Maximum Likelihood Estimation (MLE) loss function
+        # MSE loss function
         self.data = data
         self.w = np.random.normal(size=(self.data.shape[1], 1))
         for i in range(self.circle):
@@ -80,5 +80,5 @@ lr.train1(data)
 lr.predict(np.array([5,3.6,1.5,0.1]))#data close to class 0
 lr.predict(np.array([5.7,2.9,4,0.8]))#data close to class 1
 lr.train2(data)
-lr.predict(np.array([5,3.6,1.5,0.1]))#data
+lr.predict(np.array([5,3.6,1.5,0.1]))
 lr.predict(np.array([5.7,2.9,4,0.8]))
