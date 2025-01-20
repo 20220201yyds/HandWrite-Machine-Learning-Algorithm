@@ -52,7 +52,7 @@ class PositionalEncoding(nn.Module):
 
 
 
-d_model=512
+"""d_model=512
 vocab=1000
 dropout=0.1
 max_len=60
@@ -66,4 +66,4 @@ print(embr.shape)
 
 pe=PositionalEncoding(d_model,dropout,max_len)
 pe_result=pe(embr)
-print('pe_result:',pe_result)
+print('pe_result:',pe_result)"""
